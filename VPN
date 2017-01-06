@@ -1,0 +1,20 @@
+https://wiki.debian.org/OpenVPN
+
+**OpenVPN client**
+Основные шаги настройки будут следующими:
+Установите OpenVPN
+(apt-get install openvpn или aptitude install openvpn или yum install openvpn в зависимости от вашей системы).
+
+Найдите папку с конфигурацией на вашей системе. На Debian это /etc/openvpn (можете использовать команду whereis openvpn). Если в папке config есть какие-то файлы, то удалите их.
+
+Скачайте архив конфигураций на нашем сайте (для этого введите код на странице VPN и следуйте подсказкам), распакуйте и переместите файлы из папки config архива в соответствующую папку программы openvpn.
+
+Запуск и подключение: cd /etc/openvpn && sudo openvpn --config "Russia, Moscow S1.ovpn"
+
+**PPTP client** (для VPN сервера на винде)
+несколько хороших инструкций
+http://pptpclient.sourceforge.net/howto-debian.phtml (использовал эту инструкцию)
+https://wiki.debian.org/ru/pptp-linux
+
+Хорошая статья по инструментам диагностики ошибок подключения pptp
+http://pptpclient.sourceforge.net/howto-diagnosis.phtml
